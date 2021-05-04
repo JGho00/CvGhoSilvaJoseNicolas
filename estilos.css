@@ -1,0 +1,87 @@
+header {
+    background: #317798;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.logoImg {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.logoImg img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.nombreHeader {
+    text-align: center;
+}
+
+.nombreHeader p {
+    font-style: italic;
+}
+
+.redes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes a {
+    margin-left: 3px;
+    font-size: 28px;
+    color: black;
+}
+
+.redes p {
+    font-weight: 400;
+}
+
+.descripcionGeneral,
+.seccionCompetencias,
+.seccionEducacion {
+    padding: 30px;
+}
+
+.seccionCompetencias,
+.seccionEducacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contenedorCompetencias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.competencias {
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:768px) {
+    .redes {
+        margin-top: 20px;
+        grid-template-columns: repeat(8, 1fr)
+    }
+}
+
+@media screen and (max-width:526px) {
+    .redes {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .redes p {
+        display: none;
+    }
+}
