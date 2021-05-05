@@ -44,6 +44,10 @@ header {
     color: black;
 }
 
+.redes a:hover {
+    color: white;
+}
+
 .redes p {
     font-weight: 400;
 }
