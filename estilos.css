@@ -1,6 +1,7 @@
 body {
     box-sizing: border-box;
     margin: 0px;
+    background-color: #EAEDED;
 }
 
 header {
@@ -50,7 +51,8 @@ header {
 .descripcionGeneral,
 .seccionCompetencias,
 .seccionEducacion,
-.seccionExperienciaLaboral {
+.seccionExperienciaLaboral,
+.seccionInformacion {
     padding: 30px;
 }
 
@@ -73,9 +75,10 @@ h2 {
 
 .competencias {
     min-width: 250px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+}
+
+.enlaces {
+    color: black
 }
 
 @media screen and (max-width:768px) {
